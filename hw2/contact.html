@@ -2,53 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Me</title>
+    <title>Contact</title>
 </head>
 
 <body>
 
-<header>
-    <h1 id="top">Contact Me </h1>
+<header id="top">
+    <h1>Contact Me</h1>
 
-    <nav>
+    <nav role="navigation" aria-label="Main Navigation">
         <a href="index.html">Home</a> |
         <a href="cv.html">CV</a> |
         <a href="projects.html">Projects</a> |
         <a href="contact.html">Contact</a>
     </nav>
+    <hr>
 </header>
 
 <main>
 
-    <h2>Sara Saud Alrowaily</h2>
+    <h2>Get in Touch</h2>
 
-    <!-- Contact Info Table -->
-    <table border="1" cellpadding="10">
-        <tr>
-            <td>Email</td>
-            <td>
-                <a href="mailto:443200756@student.ksu.edu.sa">
-                    443200756@student.ksu.edu.sa
-                </a>
-            </td>
-        </tr>
+    <p>
+        Email me directly:
+        <a href="mailto:443200756@student.ksu.edu.sa">
+            443200756@student.ksu.edu.sa
+        </a>
+    </p>
 
-        <tr>
-            <td>Phone</td>
-            <td>0551588384</td>
-        </tr>
+    <form action="#" method="post">
 
-        <tr>
-            <td>Age</td>
-            <td>22 Years Old</td>
-        </tr>
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+        </p>
 
-        <tr>
-            <td>Location</td>
-            <td>Saudi Arabia, Riyadh</td>
-        </tr>
-    </table>
-    
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Send</button>
+            <button type="reset">Clear</button>
+        </p>
+
+    </form>
+
+    <p><a href="#top">Back to Top</a></p>
+
 </main>
 
 <footer>
