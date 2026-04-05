@@ -69,8 +69,6 @@ img {
 /* Class selector */
 .highlight {
   background-color: #f3e7e5;
-  padding= 0.2rem 0.4rem;
-  border-radius= 4px;
 }
 
 /* ID selector */
