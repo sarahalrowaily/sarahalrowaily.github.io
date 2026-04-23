@@ -8,6 +8,8 @@ function validateForm(event) {
     event.preventDefault();
   }
 }
+
+// Toggle Description
 function toggleDescription(id) {
   var desc = document.getElementById(id);
 
@@ -17,26 +19,32 @@ function toggleDescription(id) {
     desc.style.display = "none";
   }
 }
-var quote = document.getElementById("quote");
-if (quote) {
-  quote.addEventListener("mouseover", function() {
-    quote.style.backgroundColor = "#f3e7e5";
-    quote.style.fontStyle = "italic";
-  });
 
-  quote.addEventListener("mouseout", function() {
-    quote.style.backgroundColor = "";
-    quote.style.fontStyle = "";
-  });
-}
+// CV Interaction + Homepage Date
 window.onload = function() {
-  var p = document.createElement("p");
 
-  var now = new Date();
-  var text = document.createTextNode("Page loaded on: " + now);
+  // ===== CV =====
+  var quote = document.getElementById("quote");
+  if (quote) {
+    quote.addEventListener("mouseover", function() {
+      quote.style.backgroundColor = "#f3e7e5";
+      quote.style.fontStyle = "italic";
+    });
 
-  p.appendChild(text);
+    quote.addEventListener("mouseout", function() {
+      quote.style.backgroundColor = "";
+      quote.style.fontStyle = "";
+    });
+  }
 
+  // ===== Homepage Date =====
   var footer = document.querySelector("footer");
-  footer.appendChild(p);
+  if (footer) {
+    var p = document.createElement("p");
+    var now = new Date();
+    var text = document.createTextNode("Page loaded on: " + now);
+
+    p.appendChild(text);
+    footer.appendChild(p);
+  }
 };
