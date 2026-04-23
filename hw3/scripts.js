@@ -17,3 +17,16 @@ function toggleDescription(id) {
     desc.style.display = "none";
   }
 }
+var quote = document.getElementById("quote");
+
+if (quote) {
+  quote.addEventListener("mouseover", function() {
+    quote.style.backgroundColor = "#f3e7e5";
+    quote.style.fontStyle = "italic";
+  });
+
+  quote.addEventListener("mouseout", function() {
+    quote.style.backgroundColor = "";
+    quote.style.fontStyle = "";
+  });
+}
