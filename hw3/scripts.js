@@ -18,7 +18,6 @@ function toggleDescription(id) {
   }
 }
 var quote = document.getElementById("quote");
-
 if (quote) {
   quote.addEventListener("mouseover", function() {
     quote.style.backgroundColor = "#f3e7e5";
