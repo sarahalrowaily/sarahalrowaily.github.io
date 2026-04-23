@@ -29,3 +29,14 @@ if (quote) {
     quote.style.fontStyle = "";
   });
 }
+window.onload = function() {
+  var p = document.createElement("p");
+
+  var now = new Date();
+  var text = document.createTextNode("Page loaded on: " + now);
+
+  p.appendChild(text);
+
+  var footer = document.querySelector("footer");
+  footer.appendChild(p);
+};
