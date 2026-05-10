@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf8f6;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #e8cfc7;
+  padding: 1.25rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px gray;
+}
+
+/* Navigation */
+nav {
+  background-color: #caa6a0;
+  padding: 0.6rem;
+}
+/* Links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0.6rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f7e8e5;
+}
+
+/* Main content */
+main {
+  width: 80%;
+  min-height: 70vh;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border: 1px solid #e0d5d2;
+}
+
+/* Headings */
+h1, h2 {
+  text-transform: capitalize;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+}
+
+/* Lists */
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+/* Images */
+img {
+  width: 18rem;
+  border: 1px solid #ccc;
+}
+
+/* Class selector */
+.highlight {
+  background-color: #f3e7e5;
+}
+
+/* ID selector */
+#intro {
+  border: 2px dashed #8b6f5a;
+  padding: 0.6rem;
+}
+
+/* Extra styling */
+dt {
+  font-style: italic;
+}
